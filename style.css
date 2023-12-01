@@ -6,10 +6,9 @@
     --camel: #D8A47F;
 }
 
-body {
+.page {
     background-color: var(--light);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
 }
 
 .card {
@@ -39,4 +38,31 @@ body {
 }
 .header{
     font-size: 2.25rem;
+}
+.textToggle{
+    display: none;
+}
+@media (prefers-color-scheme: dark){
+    .page{
+        background-color:var(--dark);
+        color: var(--light);
+    }
+}
+@media screen and (min-width:700px) {
+    body{
+        font-size: 1.5rem;
+        
+    }
+}
+@media screen and (min-width:1000px) {
+    body{
+        font-size: 1.75rem;
+        
+    }
+}
+@media only screen and (min-width: 750px){
+    /*for non mobile display cat ipsum*/
+    .textToggle{
+        display: block;
+    }
 }
